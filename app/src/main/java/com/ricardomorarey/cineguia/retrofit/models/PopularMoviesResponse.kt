@@ -1,4 +1,6 @@
-package com.ricardomorarey.cineguia.retrofit
+package com.ricardomorarey.cineguia.retrofit.models
+
+import com.ricardomorarey.cineguia.retrofit.Movie
 
 data class PopularMoviesResponse(
         val page: Int,
