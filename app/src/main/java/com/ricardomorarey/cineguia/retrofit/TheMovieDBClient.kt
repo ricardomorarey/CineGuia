@@ -3,6 +3,7 @@ package com.ricardomorarey.cineguia.retrofit
 import com.google.gson.Gson
 import com.ricardomorarey.cineguia.common.Constants
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
@@ -25,8 +26,13 @@ class TheMovieDBClient {
 
     init {
         //add interceptor
+
+        val interdep = HttpLoggingInterceptor()
+        interdep.setLevel(HttpLoggingInterceptor.Level.BODY)
+
         val okHttpClientBuilder = OkHttpClient.Builder()
         okHttpClientBuilder.addInterceptor(TheMovieDBInterceptor())
+            .addNetworkInterceptor(interdep)
 
         val client = okHttpClientBuilder.build()
 
