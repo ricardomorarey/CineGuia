@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/navigation_cine"
-        android:name="com.ricardomorarey.cineguia.ui.home.HomeFragment"
+        android:name="com.ricardomorarey.cineguia.ui.movie.MoviewListFragment"
         android:label="@string/title_cine"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_moview_list_list" />
 
     <fragment
         android:id="@+id/navigation_dashboard"

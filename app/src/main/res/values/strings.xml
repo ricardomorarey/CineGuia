@@ -4,4 +4,5 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_cine">películas</string>
+    <string name="_0">0</string>
 </resources>

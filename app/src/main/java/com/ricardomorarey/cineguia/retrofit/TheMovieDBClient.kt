@@ -18,7 +18,7 @@ class TheMovieDBClient {
                 if (field == null) {
                     instance = TheMovieDBClient()
                 }
-                return instance
+                return field
             }
     }
 

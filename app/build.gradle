@@ -60,4 +60,6 @@ dependencies {
         exclude module: 'okhttp'
     }
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+    implementation("io.coil-kt:coil:1.2.1")
 }
